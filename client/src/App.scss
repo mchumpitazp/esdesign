@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;600;700;900&display=swap');
+
+// Colors
+$green: #2D4B48;
+$pink: #F8E6E0;
+
+// Overwrite font sizes
+h1 { font-size: 4rem; }
+h2 { font-size: 2.5rem; }
+h4 { font-size: 1rem; }
+p { font-size: 0.9rem; }
+
+body {
+    font-family: 'Mulish', sans-serif;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+
+    nav {
+        font-size: 0.9rem;
+        font-weight: 700;
+        
+        .navbar-toggler {
+            border: none;
+            .navbar-toggler-icon { background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 1 24 30%27%3e%3cpath stroke=%27rgba%280, 0, 0, 1%29%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3e%3c/svg%3e"); }
+        }
+
+        .navbar-collapse {
+            height: 100% !important;
+        }
+
+        .nav-link.active {
+            font-weight: 700;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .nav-link {
+        font-weight: 600;
+        padding-top: 1rem;
+    }
+
+    .navbar-collapse {
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding: 1rem;
+        padding-left: 2rem;
+        width: 250px;
+        background-color: white;
+    }
+
+    .navbar-collapse.collapsing {
+        right: -250px;
+        transition: right 300ms ease-in-out;
+    }
+
+    .navbar-collapse.show {
+        right: 0;
+        transition: right 200ms ease-in-out;
+    }
+
+}
+
+#headline {
+    height: 110%;
+
+    #headline-text {
+        position: absolute;
+        width: 50%;
+        height: 110%;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+
+        h1 { 
+            font-size: 4rem;
+            span { font-weight: 700; }
+        }
+    }
+
+    #hero {
+        position: absolute;
+        right: 0;
+        width: 60%;
+        height: 120%;
+        background-image: url('../public/hero.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    #headline #hero { width: 100%; }
+}
+
+.section-header { 
+    text-align: center;
+    font-weight: 700;
+}
+
+#services {
+    background-color: $pink;
+    color: black;
+    padding-top: 7rem;
+
+    .col { 
+        margin-bottom: 1rem;
+
+        .service-name {
+            margin-top: 1rem;
+            font-weight: 900;
+        }
+    }
+
+}
