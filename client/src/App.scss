@@ -6,7 +6,8 @@ $pink: #F8E6E0;
 
 // Overwrite font sizes
 h1 { font-size: 4rem; }
-h2 { font-size: 2.5rem; }
+h2 { font-size: 3rem; }
+h3 { font-size: 1.3rem;}
 h4 { font-size: 1rem; }
 p { font-size: 0.9rem; }
 
@@ -94,21 +95,27 @@ header {
     }
 }
 
-@media screen and (max-width: 991px) {
-    #headline #hero { width: 100%; }
+@media (max-width: 991px) {
+    #headline {
+        #headline-text { width: 80%; }
+        #hero { width: 100%; }
+    }
 }
 
 .section-header { 
     text-align: center;
     font-weight: 700;
+    margin-bottom: 4rem;
 }
 
 #services {
-    background-color: $pink;
-    color: black;
-    padding-top: 7rem;
+    background-color: black;
+    color: white;
+    padding-top: 8rem;
 
-    .col { 
+    .col {
+        padding-left: 20px;
+        padding-right: 20px;
         margin-bottom: 1rem;
 
         .service-name {
@@ -116,5 +123,68 @@ header {
             font-weight: 900;
         }
     }
+}
 
+#projects {
+    padding-top: 4rem;
+
+    .row {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 5rem;
+
+        .col {
+            padding: 2px;
+
+            .single-project {
+                background: black;
+                border-radius: 5px;
+                overflow: hidden;
+            }
+
+            .single-project > a {
+                position: relative;
+                display: block;
+                z-index: 2;
+                transition: opacity 0.2s ease-in-out;
+            }
+
+            .single-project:hover > a {
+                text-decoration: none;
+                opacity: 0.6;
+            }
+
+            .single-project > a img {
+                transition: all 0.2s ease-in-out;
+            }
+
+            .single-project:hover > a img {
+                transform: scale(1.1);
+            }
+
+            .single-project-content {
+                position: absolute;
+                visibility: visible;
+                text-align: center;
+                color: white;
+                z-index: 1000;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                transition: all 0.2s ease-in-out;
+                
+                h3 { font-weight: 900;}
+
+                h4 { 
+                    margin: 0; 
+                    font-weight: 600;
+                }
+            }
+        }
+
+
+    }
+
+    
+    
 }

@@ -5,7 +5,7 @@ function Services () {
     return (
         <section id="services">
             <Container>
-                <h2 className="section-header pb-5">Our Services</h2>
+                <h2 className="section-header">Our Services</h2>
                 
                 <Row xs="1" md="3" className="pb-5">
                     <Col>

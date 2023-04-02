@@ -4,6 +4,7 @@ import React from "react";
 import Header from "./HeaderComponent";
 import Headline from "./HeadlineComponent";
 import Services from "./ServicesComponent";
+import Projects from "./ProjectsComponent";
 
 // Redux
 
@@ -14,6 +15,7 @@ function Main () {
             <Header />
             <Headline />
             <Services />
+            <Projects />
         </React.Fragment>
     );
 }
