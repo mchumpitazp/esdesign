@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;600;700;900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
 
 // Colors
 $green: #2D4B48;
@@ -140,38 +141,54 @@ header {
                 background: black;
                 border-radius: 5px;
                 overflow: hidden;
+                
+                a {
+                    position: relative;
+                    display: block;
+                }
+
+                a::before {
+                    position: absolute;
+                    content: "";
+                    visibility: hidden;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    opacity: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 2;
+                    transition: all 0.3s ease-in-out;
+                    background-color: rgba(black, 0.4);
+                }
+
+                img { transition: all 0.3s ease-in-out; }
             }
 
-            .single-project > a {
-                position: relative;
-                display: block;
-                z-index: 2;
-                transition: opacity 0.2s ease-in-out;
-            }
+            .single-project:hover {
+                a::before {
+                    opacity: 1;
+                    visibility: visible;
+                }
 
-            .single-project:hover > a {
-                text-decoration: none;
-                opacity: 0.6;
-            }
+                img { transform: scale(1.1); }
 
-            .single-project > a img {
-                transition: all 0.2s ease-in-out;
-            }
-
-            .single-project:hover > a img {
-                transform: scale(1.1);
+                .single-project-content {
+                    opacity: 1;
+                    z-index: 10;
+                }
             }
 
             .single-project-content {
                 position: absolute;
-                visibility: visible;
                 text-align: center;
                 color: white;
-                z-index: 1000;
+                opacity: 0;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-                transition: all 0.2s ease-in-out;
+                transition: all 0.3s ease-in-out;
                 
                 h3 { font-weight: 900;}
 
@@ -181,10 +198,34 @@ header {
                 }
             }
         }
+    }
+}
 
+footer {
+    background-color: black;
+    color: white;
 
+    a { 
+        font-size: 0.9rem;
+        color: inherit;
+        text-decoration: none;
     }
 
-    
-    
+    .btn {
+        font-size: 1.2rem;
+        background-color: rgba(white, $alpha: 0.2);
+        color: rgba(white, 0.8);
+        border: none;
+        border-radius: 50%;
+    }
+
+    .btn:hover {
+        background-color: rgba($color: #ffffff, $alpha: 0.4);
+    }
+}
+
+@media (max-width: 767px) {
+    #footer-logo {
+        text-align: center;
+    }
 }
