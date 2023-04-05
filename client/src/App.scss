@@ -1,19 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;600;700;800;900&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
 
 // Colors
-$green: #2D4B48;
-$pink: #F8E6E0;
+$color-primary: #F8E6E0;
+$color-secondary: #2D4B48;
+$color-bg-primary: white;
+$color-bg-secondary: black;
 
 // Overwrite font sizes
 h1 { font-size: 4rem; }
-h2 { font-size: 3rem; }
+h2 { font-size: 2.5rem; }
 h3 { font-size: 1.3rem;}
 h4 { font-size: 1rem; }
 p { font-size: 0.9rem; }
 
+// Classes
+.section-header { 
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 4rem;
+}
+
 body {
     font-family: 'Mulish', sans-serif;
+    overflow-x: hidden;
+    background-color: $color-bg-primary;
 }
 
 header {
@@ -81,7 +92,13 @@ header {
 
         h1 { 
             font-size: 4rem;
-            span { font-weight: 700; }
+        }
+
+        span {
+            font-weight: 900;
+            color: rgba($color-secondary, $alpha: 1);
+            //-webkit-text-stroke: 2px black;
+
         }
     }
 
@@ -103,15 +120,9 @@ header {
     }
 }
 
-.section-header { 
-    text-align: center;
-    font-weight: 700;
-    margin-bottom: 4rem;
-}
-
 #services {
-    background-color: black;
-    color: white;
+    background-color: $color-bg-secondary;
+    color: $color-bg-primary;
     padding-top: 8rem;
 
     .col {
@@ -128,6 +139,8 @@ header {
 
 #projects {
     padding-top: 4rem;
+
+    #more-work { display: none; }   
 
     .row {
         padding-left: 20px;
@@ -201,9 +214,61 @@ header {
     }
 }
 
+#project {
+
+    .section-header { display: none; }
+    #more-work { display: block; }
+
+    #project-container {
+        padding-bottom: 10rem;
+    }
+
+    #project-bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 90%;
+        background-color: rgba($color-primary, 0.5);
+    }
+    
+    #project-text {
+        padding-top: 8rem;
+        padding-bottom: 2rem;
+        text-align: start;
+
+        p { line-height: 1.7rem; }
+        
+    }
+
+    #project-img {
+        position: absolute;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        background-image: url('../public/hero.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media (max-width: 991px) {
+    #project {
+        #project-text { 
+            text-align: center;
+        }
+
+        #project-img {
+            width: 100%;
+            height: 40%;
+        }
+    }
+}
+
 footer {
-    background-color: black;
-    color: white;
+    background-color: $color-bg-secondary;
+    color: $color-bg-primary;
 
     a { 
         font-size: 0.9rem;

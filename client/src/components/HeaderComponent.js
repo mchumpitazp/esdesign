@@ -8,7 +8,7 @@ function Header () {
     
     return (
         <header>
-            <Container className="py-2">
+            <Container className="py-2 px-0">
                 <Navbar expand="lg">
                     <NavbarBrand>Logo</NavbarBrand>
                     
@@ -27,22 +27,17 @@ function Header () {
                             </NavItem>
                             <NavItem className="me-5">
                                 <NavLink>
-                                    About us
+                                    Servicios
                                 </NavLink>
                             </NavItem>
                             <NavItem className="me-5">
                                 <NavLink>
-                                    Our Projects
-                                </NavLink>
-                            </NavItem>
-                            <NavItem className="me-5">
-                                <NavLink>
-                                    Our Services
+                                    Proyectos
                                 </NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink>
-                                    Contact us
+                                    Contáctanos
                                 </NavLink>
                             </NavItem>
                         </Nav>

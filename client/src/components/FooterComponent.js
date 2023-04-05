@@ -2,6 +2,8 @@ import React from "react";
 import { Col, Container, Row, Button } from "reactstrap";
 
 function Footer () {
+    
+
     return (
         <footer className="py-5">
             <Container>

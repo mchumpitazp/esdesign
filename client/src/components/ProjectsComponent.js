@@ -5,7 +5,8 @@ function Projects () {
     return (
         <section id="projects">
             <Container>
-                <h2 className="section-header">Our Projects</h2>
+                <h2 className="section-header">PROYECTOS</h2>
+                <h2 id="more-work" className="section-header text-start">OTROS TRABAJOS</h2>
 
                 <Row xs="1" md="2" lg="3">
                     <Col>
