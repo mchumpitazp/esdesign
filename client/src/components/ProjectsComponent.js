@@ -4,15 +4,35 @@ import { Container, Row, Col } from "reactstrap";
 function Projects () {
     return (
         <section id="projects">
-            <Container>
-                <h2 className="section-header">PROYECTOS</h2>
-                <h2 id="more-work" className="section-header text-start">OTROS TRABAJOS</h2>
-
-                <Row xs="1" md="2" lg="3">
+            
+                <h2 id="projects-header" className="section-header">Proyectos</h2>
+                {/* <h2 id="more-work" className="section-header">Otros Trabajos</h2> */}
+                
+                <div id="unique-project">
+                    <a href="/proyecto">
+                        <Row xs="1" sm="2" md="3">
+                            <Col className="d-none d-md-block">
+                                <img src="/temp/proyect1.jpg" className="img-fluid"/>
+                            </Col>
+                            <Col className="d-none d-sm-block">
+                                <img src="/temp/proyect2.jpg" className="img-fluid"/>
+                            </Col>
+                            <Col >
+                                <img src="/temp/proyect3.jpg" className="img-fluid"/>
+                            </Col>
+                        </Row>
+                        <div id="unique-content">
+                            <h3><strong>Renovación Hogar</strong></h3>
+                            <h4>Construction</h4>
+                        </div>
+                    </a>
+                </div>
+                
+                {/* <Row xs="1" md="2" lg="3">
                     <Col>
                         <div className="single-project">
                             <a href="">
-                                <img src="hero.jpg" className="img-fluid"/>
+                                <img src="/temp/proyect1.jpg" className="img-fluid"/>
                                 <div className="single-project-content">
                                     <h3>Project One</h3>
                                     <h4>Construction</h4>
@@ -23,7 +43,7 @@ function Projects () {
                     <Col>
                         <div className="single-project">
                             <a href="">
-                                <img src="hero.jpg" className="img-fluid"/>
+                                <img src="/temp/proyect2.jpg" className="img-fluid"/>
                                 <div className="single-project-content">
                                     <h3>Project Two</h3>
                                     <h4>Construction</h4>
@@ -33,8 +53,8 @@ function Projects () {
                     </Col>
                     <Col>
                         <div className="single-project">
-                            <a href="">
-                                <img src="hero.jpg" className="img-fluid"/>
+                            <a href="/proyectos">
+                                <img src="/temp/proyect3.jpg" className="img-fluid"/>
                                 <div className="single-project-content">
                                     <h3>Project Three</h3>
                                     <h4>Construction</h4>
@@ -42,8 +62,8 @@ function Projects () {
                             </a>  
                         </div>
                     </Col>
-                </Row>
-            </Container>
+                </Row>  */}
+                
         </section>
     );
 }
