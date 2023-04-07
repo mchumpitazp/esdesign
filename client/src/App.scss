@@ -43,7 +43,7 @@ body {
     font-family: 'Abhaya Libre', sans-serif;
     overflow-x: hidden;
     
-    background-color: $color-bg-primary;
+    background-color: rgba($color-primary, 0.5);
     color: $color-bg-secondary;
 }
 
@@ -108,7 +108,6 @@ header {
 
 #headline {
     height: 110%;
-    background-color: rgba($color-primary, 0.4);
     color: $color-bg-secondary;
 
     #headline-text {
@@ -152,7 +151,7 @@ header {
         right: 0;
         width: 60%;
         height: 120%;
-        background-image: linear-gradient(rgba($color-primary, 0.4) ,rgba($color-bg-secondary, 0.3)), 
+        background-image: linear-gradient(rgba($color-primary, 0.6), rgba($color-bg-secondary, 0.3)),
                             url('../public/hero2.jpg');
         background-size: cover;
         background-position: center;
@@ -236,7 +235,7 @@ header {
 
 #projects {
     background-color: rgba($color-bg-secondary, 1);
-    color: $color-bg-primary;
+    color: $color-primary;
     padding-bottom: 0;
 
     .section-header { padding-bottom: 6rem; }
@@ -438,12 +437,14 @@ header {
 }
 
 #testimonials {
+    .section-header { padding-bottom: 3rem; }
 
     .col {
-        padding: 10px;
+        padding: 40px;
 
         .testimonial {
             padding: 20px;
+            box-shadow: 0 0 10px 1px rgba($color-bg-secondary, 0.5);
             background-color: $color-primary;
         }
     }
@@ -493,7 +494,7 @@ footer {
                             url('../public/hero2.jpg');
     background-position: center;
     background-size: cover;
-    color: $color-bg-primary;
+    color: $color-primary;
     height: 60vh;
     display: flex;
     justify-content: center;
