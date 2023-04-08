@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "reactstrap";
+import { Row, Col } from "reactstrap";
 
 function Projects () {
     return (
@@ -12,13 +12,19 @@ function Projects () {
                     <a href="/proyecto">
                         <Row xs="1" sm="2" md="3">
                             <Col className="d-none d-md-block">
-                                <img src="/temp/proyect1.jpg" className="img-fluid"/>
+                                <figure className="img-container">
+                                    <img src="/images/proyectos/saenz-1.jpg" className="img-fluid"/>
+                                </figure>
+                            </Col>
+                            <Col>
+                                <figure className="img-container">
+                                    <img src="/images/proyectos/saenz-2.jpg" className="img-fluid"/>
+                                </figure>
                             </Col>
                             <Col className="d-none d-sm-block">
-                                <img src="/temp/proyect2.jpg" className="img-fluid"/>
-                            </Col>
-                            <Col >
-                                <img src="/temp/proyect3.jpg" className="img-fluid"/>
+                                <figure className="img-container">
+                                    <img src="/images/proyectos/saenz-3.jpg" className="img-fluid"/>
+                                </figure>
                             </Col>
                         </Row>
                         <div id="unique-content">

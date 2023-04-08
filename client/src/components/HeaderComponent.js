@@ -27,7 +27,7 @@ function Header () {
 
                         <Nav className="ms-auto" navbar>
                             <NavItem className="me-5">
-                                <NavLink active href="/">
+                                <NavLink href="/">
                                     Home
                                 </NavLink>
                             </NavItem>

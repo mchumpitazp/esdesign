@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "reactstrap";
 
-function About () {
+function Concept () {
     return (
         <div id="about">
             <Container>
@@ -16,4 +16,4 @@ function About () {
     )
 }
 
-export default About;
+export default Concept;

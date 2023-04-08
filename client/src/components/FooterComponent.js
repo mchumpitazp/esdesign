@@ -53,9 +53,9 @@ function Footer () {
                             </div>
                         </div>
                         
-                        <div id="footer-logo">
+                        <a id="footer-logo" href="/">
                             <img src="logo-footer.png" height="70px" alt="logo-footer"/>
-                        </div>
+                        </a>
                     </Col>
                 </Row>
                 <p className="text-center m-0">esDesignStudio &#169; 2023 All rights reserved.</p>

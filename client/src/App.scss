@@ -21,7 +21,7 @@ p {
 }
 
 @media (max-width: 767px) {
-    h1 { font-size: 3.5rem !important; }
+    h1 { font-size: 4rem !important; }
     h2 { font-size: 2.5rem !important; }
 }
 
@@ -43,7 +43,7 @@ body {
     font-family: 'Abhaya Libre', sans-serif;
     overflow-x: hidden;
     
-    background-color: rgba($color-primary, 0.5);
+    background-color: rgba($color-primary, 0.6);
     color: $color-bg-secondary;
 }
 
@@ -119,7 +119,7 @@ header {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: start;
+        align-items: flex-start;
 
         h3 span {
             display: inline-block;
@@ -151,10 +151,19 @@ header {
         right: 0;
         width: 60%;
         height: 120%;
-        background-image: linear-gradient(rgba($color-primary, 0.6), rgba($color-bg-secondary, 0.3)),
-                            url('../public/hero2.jpg');
+        background-image: linear-gradient(rgba($color-primary, 0), rgba($color-primary, 0)),
+                            url('../public/images/hero.jpg');
         background-size: cover;
         background-position: center;
+    }
+
+    #hero::before {
+        content: "";
+        visibility: hidden;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(white, 0.4);
     }
 }
 
@@ -164,6 +173,7 @@ header {
             width: 100%;
             height: 110%;
         }
+        #hero::before { visibility: visible; }
     }
 }
 
@@ -188,7 +198,8 @@ header {
             left: 0;
             width: 45%;
             height: 80%;
-            background-image: url('../public/about.jpg');
+            background-image: linear-gradient(rgba($color-secondary, 0.4), rgba($color-secondary, 0.4)),
+                                url('../public/images/concept.jpg');
             background-size: cover;
             background-position: center;
         }
@@ -204,7 +215,7 @@ header {
         margin-bottom: 0;
         background-color: none;
         background-image: linear-gradient(rgba(black, 0.85), rgba(black, 0.85)),
-                            url('../public/about.jpg');
+                            url('../public/images/concept.jpg');
         background-size: cover;
         background-position: center;
         
@@ -240,6 +251,13 @@ header {
 
     .section-header { padding-bottom: 6rem; }
     #more-work { display: none; }   
+    .col { padding: 0; }
+
+    .img-container {
+        margin: 0;
+        overflow: hidden;
+        height: 400px;
+    }
 
     #unique-project {
         background: black;
@@ -266,7 +284,12 @@ header {
             background-color: rgba($color-bg-secondary, 0.6);
         }
 
-        img { transition: all 0.3s ease-in-out; }
+        img { 
+            transition: all 0.3s ease-in-out;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
     }
 
     #unique-content {
@@ -295,7 +318,20 @@ header {
         }
     }
 
-    .col { padding: 0; }
+    @media (max-width: 567px) {
+       #unique-project {
+            a::before {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            #unique-content {
+                opacity: 1;
+                z-index: 10;
+            }
+       } 
+    }
+
 
     /*
     .row {
@@ -372,68 +408,20 @@ header {
 }
 
 #project {
-    #projects-header { display: none; }
-    #more-work { display: block; }
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 
-    #project-bg {   
-        height: 90vh;
-        margin-bottom: 10vh;
-        background-color: rgba($color-primary, 0.5);
+    .carousel-item {
+        height: 400px;
+        
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
     }
+
     
-    #project-text {
-        width: 40%;
-        padding-top: 8rem;
-        padding-bottom: 2rem;
-        text-align: start;
-
-        h2 { font-weight: 800; }   
-    }
-
-    #project-img {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 50%;
-        height: 100%;
-        background-image: url('../public/hero.jpg');
-        background-size: cover;
-        background-position: center;
-    }
-
-    #projects {
-        background-color: $color-bg-primary;
-        color: black;
-    }
-}
-
-@media (max-width: 991px) {
-    #project {
-
-        #more-work { text-align: center;}
-
-       #project-bg {
-            height: auto;
-            margin-bottom: 0;
-
-            #project-img {
-                position: static;
-                width: 100%;
-                height: 300px;
-            }
-
-            #project-text {
-                padding-top: 3rem;
-                padding-bottom: 3rem;
-                text-align: center;
-                width: 100%;
-            }
-       } 
-    }
-}
-
-@media (max-width: 561px) {
-    #project-img { height: 400px !important; }
 }
 
 #testimonials {
@@ -489,9 +477,9 @@ footer {
 // Pages
 
 .page-header {
-    background-image: linear-gradient(rgba($color-bg-secondary, 0.85),
-                        rgba($color-bg-secondary, 0.85)),
-                            url('../public/hero2.jpg');
+    background-image: linear-gradient(rgba($color-bg-secondary, 0.95),
+                        rgba($color-bg-secondary, 0.95)),
+                            url('../public/images/hero.jpg');
     background-position: center;
     background-size: cover;
     color: $color-primary;

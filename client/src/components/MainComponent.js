@@ -6,7 +6,7 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 // Components
 import Header from "./HeaderComponent";
 import Headline from "./HeadlineComponent";
-import About from "./AboutComponent";
+import Concept from "./ConceptComponent";
 import Services from "./ServicesComponent";
 import Projects from "./ProjectsComponent";
 import Testimonials from "./TestimonalsComponent";
@@ -30,7 +30,7 @@ function Main () {
         return (
             <React.Fragment>
                 <Headline />
-                <About />
+                <Concept />
                 <Services />
                 <Projects />
                 <Testimonials />
