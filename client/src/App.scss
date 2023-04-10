@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;600;700;800&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
 
@@ -41,8 +39,6 @@ section {
 
 body {
     font-family: 'Abhaya Libre', sans-serif;
-    overflow-x: hidden;
-    
     background-color: rgba($color-primary, 0.6);
     color: $color-bg-secondary;
 }
@@ -151,9 +147,8 @@ header {
         right: 0;
         width: 60%;
         height: 120%;
-        background-image: linear-gradient(rgba($color-primary, 0), rgba($color-primary, 0)),
-                            url('../public/images/hero.jpg');
-        background-size: cover;
+        background-image: linear-gradient(rgba($color-primary, 0), rgba($color-primary, 0)), url('../public/images/hero.jpg');
+        background-size: cover; 
         background-position: center;
     }
 
@@ -175,6 +170,10 @@ header {
         }
         #hero::before { visibility: visible; }
     }
+}
+
+@media (max-width: 576px) {
+    #headline-text { width: 90% !important; }
 }
 
 #about {
@@ -501,6 +500,12 @@ footer {
     #services {
         padding-bottom: 6rem;
         h2 { display: none; }
+    }
+}
+
+@media (max-width: 767px) {
+    #services-page {
+        .page-phrase > h4 { width: 90% !important; }
     }
 }
 
