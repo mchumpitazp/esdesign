@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import ProjectCarousel from "./ProjectCarouselComponent";
+import Testimonials from "./TestimonalsComponent";
 
 function SingleProject () {
     React.useEffect(() => {
@@ -17,13 +18,15 @@ function SingleProject () {
                             <br />
                             <h2 data-aos="fade-up" data-aos-delay="0"><strong>Renovación Hogar</strong></h2>
                             <br/>
-                            <p data-aos="fade-up" data-aos-delay="100">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+                            <p data-aos="fade-up" data-aos-delay="100">ES Design completó con éxito un impresionante proyecto de renovación de vivienda que muestra su experiencia en la creación de espacios habitables funcionales y estéticamente agradables. Con una atención meticulosa a los detalles, soluciones de diseño innovadoras y un enfoque en la satisfacción del cliente. El resultado es una transformación del hogar en un oasis moderno que integra estilo, funcionalidad y comodidad para los propietarios.</p>
                         </div>
                     </Col>
                     <Col>
                        <ProjectCarousel />
                     </Col>
                 </Row>
+
+                <Testimonials />
             </Container>
         </div>
     );

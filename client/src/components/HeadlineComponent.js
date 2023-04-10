@@ -38,7 +38,7 @@ function Headline () {
                     <h3 className="m-0" data-aos="fade-up" data-aos-delay="100"><i>Arquitectura y Diseño <span>de Interiores</span></i></h3>
                     <br/>
                     <h1 data-aos="fade-up" data-aos-delay="200">
-                        <strong><strong>En esDesign <br/><span ref={animationRef}>creamos</span><br/> soluciones innovadoras</strong></strong>
+                        <strong><strong>En ES Design <br/><span ref={animationRef}>creamos</span><br/> soluciones innovadoras</strong></strong>
                     </h1>
                     <br/>
                     <Button href="/contactanos" color="dark" outline data-aos="fade-up" data-aos-delay="100">

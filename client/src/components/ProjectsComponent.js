@@ -29,7 +29,7 @@ function Projects () {
                         </Row>
                         <div id="unique-content">
                             <h3><strong>Renovación Hogar</strong></h3>
-                            <h4>Construction</h4>
+                            <h4>Construcción</h4>
                         </div>
                     </a>
                 </div>

@@ -491,10 +491,16 @@ footer {
 }
 
 #services-page {
-    #services {
-        padding-bottom: 0;
-        h2 { display: none; }
+    .page-phrase {
+        display: flex;
+        justify-content: center;
+        padding-top: 5rem;
+        h4 { width: 50%; }
+    }
 
+    #services {
+        padding-bottom: 6rem;
+        h2 { display: none; }
     }
 }
 
@@ -515,7 +521,7 @@ footer {
         align-items: center;
         gap: 1.5rem;
 
-    h4 { width: 30%; }
+        h4 { width: 30%; }
 
         .btn {
             width: 50%;

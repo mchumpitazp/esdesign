@@ -39,7 +39,7 @@ function Footer () {
                     </Col>
                     <Col className="d-flex flex-column justify-content-between pb-5 order-md-1">
                         <div className="pb-5">
-                            <h4 className="pb-3"><strong>Connecta con nosotros</strong></h4>
+                            <h4 className="pb-3"><strong>Conecta con nosotros</strong></h4>
                             <div>
                                 <Button href="https://wa.me/51901444236" color="dark" outline target="_blank" rel="noopener noreferrer">
                                     <i className="bi bi-whatsapp"></i>
@@ -58,7 +58,7 @@ function Footer () {
                         </a>
                     </Col>
                 </Row>
-                <p className="text-center m-0">esDesignStudio &#169; 2023 All rights reserved.</p>
+                <p className="text-center m-0">ESDesignStudio &#169; 2023 All rights reserved.</p>
             </Container>
         </footer>
     );
