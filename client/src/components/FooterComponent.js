@@ -5,7 +5,7 @@ function Footer () {
     
 
     return (
-        <footer className="py-5">
+        <footer>
             <Container>
                 <Row xs="1" md="2">
                     <Col className="pb-5 order-md-2">
@@ -25,13 +25,13 @@ function Footer () {
                             </div>
                             <div className="d-flex align-items-center my-1">
                                 <i className="bi-shield-check me-2"></i>
-                                <a href="https://www.termsfeed.com/live/df0b14f0-ece8-47d0-ade1-9eb74dcb0a16" target="_blank" rel="noreferrer">
+                                <a target="_blank" rel="noreferrer">
                                     Política de Privacidad
                                 </a>
                             </div>
                             <div className="d-flex align-items-center my-1">
                                 <i className="bi-file-earmark-lock me-2"></i>
-                                <a href="https://www.termsfeed.com/live/0a311242-9d59-4157-b70f-14b09b400ca4" target="_blank" rel="noreferrer">
+                                <a target="_blank" rel="noreferrer">
                                     Terminos y Condiciones
                                 </a>
                             </div>
@@ -54,11 +54,11 @@ function Footer () {
                         </div>
                         
                         <a id="footer-logo" href="/">
-                            <img src="logo-footer.png" height="70px" alt="logo-footer"/>
+                            <img src="logo.png" height="70px" alt="logo-footer"/>
                         </a>
                     </Col>
                 </Row>
-                <p className="text-center m-0">ESDesignStudio &#169; 2023 All rights reserved.</p>
+                <p className="text-center m-0">ES Design Studio &#169; 2023 All rights reserved.</p>
             </Container>
         </footer>
     );

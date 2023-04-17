@@ -13,9 +13,9 @@ function Header () {
     return (
         <header>
             <Container className="py-2 px-0">
-                <Navbar expand="lg">
+                <Navbar className="navbar navbar-dark" expand="lg">
                     <NavbarBrand href="/">
-                        <img src="logo.png" height="60px" alt="logo"/>
+                        <img className="me-2" src="logo.png" height="60px" alt="logo"/>
                     </NavbarBrand>
                     
                     <NavbarToggler onClick={toggle} />
@@ -26,24 +26,24 @@ function Header () {
                         </div>
 
                         <Nav className="ms-auto" navbar>
-                            <NavItem className="me-5">
+                            <NavItem className="me-4">
                                 <NavLink href="/">
-                                    Home
+                                    HOME
                                 </NavLink>
                             </NavItem>
-                            <NavItem className="me-5">
+                            <NavItem className="me-4">
                                 <NavLink href="/servicios">
-                                    Servicios
+                                    SERVICIOS
                                 </NavLink>
                             </NavItem>
-                            <NavItem className="me-5">
+                            <NavItem className="me-4">
                                 <NavLink href="/proyectos">
-                                    Proyectos
+                                    PROYECTOS
                                 </NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink href="/contactanos">
-                                    Contáctanos
+                                    CONTACTO
                                 </NavLink>
                             </NavItem>
                         </Nav>

@@ -10,7 +10,7 @@ function ProjectsPage () {
     return (
         <div id="projects-page">
             <div className="page-header">
-                <h1><strong>Proyectos</strong></h1>
+                <h1>Proyectos</h1>
             </div>
 
             <Projects />   

@@ -35,15 +35,19 @@ function Headline () {
         <div id="headline">
             <Container>
                 <div id="headline-text">
-                    <h3 className="m-0" data-aos="fade-up" data-aos-delay="100"><i>Arquitectura y Diseño <span>de Interiores</span></i></h3>
+                    <h3 className="m-0" data-aos="fade-up" data-aos-delay="100">Arquitectura y Diseño <span>de Interiores</span></h3>
+                    <br/>
                     <br/>
                     <h1 data-aos="fade-up" data-aos-delay="200">
-                        <strong><strong>En ES Design <br/><span ref={animationRef}>creamos</span><br/> soluciones innovadoras</strong></strong>
+                        En ES Design <br/><span ref={animationRef}>creamos</span><br/> soluciones innovadoras
                     </h1>
                     <br/>
-                    <Button href="/contactanos" color="dark" outline data-aos="fade-up" data-aos-delay="100">
-                        Contáctanos
-                    </Button>
+                    <br/>
+                    <div id="headline-btn-container">
+                        <Button href="/contactanos" color="dark" outline data-aos="fade-up" data-aos-delay="100">
+                            Contáctanos
+                        </Button>
+                    </div>
                 </div>
                 <div id="hero"></div>
             </Container>

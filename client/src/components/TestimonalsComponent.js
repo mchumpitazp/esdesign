@@ -7,7 +7,15 @@ function Testimonials () {
             <Container>
                 <h2 className="section-header">Testimonios</h2>
 
-                <Row xs="1" md="2">
+                <div className="testimonial" data-aos="fade-up" data-aos-delay="100">
+                    <p>"Gracias a la experiencia y la visión creativa de ES Design, nuestro proyecto de renovación de la casa resultó ser una experiencia perfecta y transformadora, que dio como resultado un espacio habitable impresionante que realmente se siente como la casa de nuestros sueños".</p>
+                    <div>
+                        <h5><strong>Andrés Saenz</strong></h5>
+                        <h5>Renovación Hogar</h5>
+                    </div>
+                </div>
+
+                {/* <Row xs="1" md="1">
                     <Col data-aos="fade-up" data-aos-delay="200">
                         <div className="testimonial">
                             <p>"Gracias a la experiencia y la visión creativa de ES Design, nuestro proyecto de renovación de la casa resultó ser una experiencia perfecta y transformadora, que dio como resultado un espacio habitable impresionante que realmente se siente como la casa de nuestros sueños".</p>
@@ -26,7 +34,7 @@ function Testimonials () {
                             </div>
                         </div>
                     </Col>
-                </Row>
+                </Row> */}
             </Container>
         </section>
     )

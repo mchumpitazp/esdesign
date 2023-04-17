@@ -80,7 +80,8 @@ function ProjectCarousel () {
   return (
     <Carousel
       dark
-      pause="false"
+      ride='carousel'
+      pause='false'
       interval="3000"
       activeIndex={activeIndex}
       next={next}

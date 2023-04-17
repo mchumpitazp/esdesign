@@ -28,8 +28,8 @@ function Projects () {
                             </Col>
                         </Row>
                         <div id="unique-content">
-                            <h3><strong>Renovación Hogar</strong></h3>
-                            <h4>Construcción</h4>
+                            <h3>Renovación Hogar</h3>
+                            <p>Construcción</p>
                         </div>
                     </a>
                 </div>

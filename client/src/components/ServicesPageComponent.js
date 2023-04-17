@@ -9,7 +9,7 @@ function ServicesPage () {
     return (
         <div id="services-page">
             <div className="page-header">
-                <h1><strong>Servicios</strong></h1>
+                <h1>Servicios</h1>
             </div>
 
             <div className="page-phrase">
